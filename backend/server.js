@@ -1,13 +1,14 @@
-const express =require("express");
+const express=require("express");
 const cors=require("cors");
-require("dotenv").config();
+const dotenv=require("dotenv");
+const connectDB=require("./confid/db");
+dotenv.config();
 const app=express();
+connectDB();
 app.use(cors());
 app.use(express.json());
-app.get("/".at(req,res)=>{
-    res.send("todo api running");
+app.get("/",(req,resp)=>{
+    res.send("tood is running");
 });
 const PORT=process.env.PORT ||5000;
-app.listen(PORT,()=>{
-    console.log('server running');
-})
+app.listen
