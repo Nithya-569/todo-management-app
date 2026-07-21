@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 function Login(){
     return{
-        <div className="container ch-100 d-flex justify-content-center align-items-center"> 
+        <div className="container ch-100 d-flex justify-content-center align-items-center">
             <div className="card shadow p-4" style={{width:400px}}>
             <h2 className="text-center mb-4 "> Todo Manager</h2>
             <form>
@@ -30,9 +30,8 @@ function Login(){
         </p>
         </div>
         </div>
-    );
         
-
+    );
     }
 }
 export default Login;
