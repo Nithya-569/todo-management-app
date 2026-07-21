@@ -11,4 +11,4 @@ app.get("/",(req,resp)=>{
     res.send("tood is running");
 });
 const PORT=process.env.PORT ||5000;
-app.listen
+app.listen();
